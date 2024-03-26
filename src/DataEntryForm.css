@@ -1,0 +1,90 @@
+/* DataEntryForm.css */
+
+body {
+    background: linear-gradient(135deg, #ff6b6b, #1eae98);
+    padding: 31px;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #f9f3f3;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 48%;
+    padding: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: calc(100% - 20px); /* Adjusted width to accommodate the space between inputs */
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #007bff;
+}
+
+.btn-primary {
+    background-color: #1880f7;
+    border-color: #007bff;
+    padding: 15px 40px; /* Increased padding */
+    font-size: 16px;
+    display: block;
+    margin: auto; /* Centering the button */
+    width: 100%; /* Make the button width 100% */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+
+.form-check-input:checked + .form-check-label::before {
+    content: "\2713";
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 80%;
+}
